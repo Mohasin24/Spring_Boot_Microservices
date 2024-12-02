@@ -50,4 +50,9 @@ public class OrderController
         log.error("Fallback executed due to: {}", throwable.getMessage());
         return ResponseEntity.internalServerError().body("Oops something went wrong"); // Return a default or null object, depending on your requirements.
     }
+
+    @GetMapping("/test")
+    public String test(){
+        return "Test successful";
+    }
 }
