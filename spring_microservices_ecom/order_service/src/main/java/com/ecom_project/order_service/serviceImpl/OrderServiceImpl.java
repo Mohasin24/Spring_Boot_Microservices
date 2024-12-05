@@ -3,10 +3,12 @@ package com.ecom_project.order_service.serviceImpl;
 import com.ecom_project.order_service.dao.OrderDao;
 import com.ecom_project.order_service.dto.InventoryResponse;
 import com.ecom_project.order_service.dto.OrderDto;
+import com.ecom_project.order_service.event.OrderPlacedEvent;
 import com.ecom_project.order_service.model.Order;
 import com.ecom_project.order_service.model.OrderLineItems;
 import com.ecom_project.order_service.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
@@ -17,10 +19,12 @@ import java.util.List;
 public class OrderServiceImpl implements OrderService {
     private final OrderDao orderDao;
     private final WebClient.Builder webClientBuilder;
+    private final KafkaTemplate<String,OrderPlacedEvent> kafkaTemplate;
     @Autowired
-    public OrderServiceImpl(OrderDao orderDao,WebClient.Builder webClientBuilder){
+    public OrderServiceImpl(OrderDao orderDao,WebClient.Builder webClientBuilder,KafkaTemplate kafkaTemplate){
         this.orderDao=orderDao;
         this.webClientBuilder =webClientBuilder;
+        this.kafkaTemplate=kafkaTemplate;
     }
 
     @Override
@@ -47,8 +51,12 @@ public class OrderServiceImpl implements OrderService {
         boolean result = inventoryResponses.length>0 && Arrays.stream(inventoryResponses).allMatch(inventoryResponse -> inventoryResponse.isInStock);
         System.err.println(result);
         if(result){
-            System.err.println("Order is placed");
+
             Order savedOrder = orderDao.save(order);
+
+//            Kafka
+            kafkaTemplate.send("notificationTopic",new OrderPlacedEvent(savedOrder.getOrderNumber()));
+
             OrderDto dto = OrderDto.builder()
                     .id(savedOrder.getId())
                     .orderNumber(savedOrder.getOrderNumber())
