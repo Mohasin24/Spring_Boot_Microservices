@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7b608577-8706-4f83-b8c3-f45fab883f05" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.idea/04_Java_Microservices.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../auth_microservices_yt/.idea/auth_microservices.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring_microservices_ecom/notification_service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_microservices_ecom/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring_microservices_ecom/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_microservices_ecom/order_service/src/main/java/com/ecom_project/order_service/event/OrderPlacedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring_microservices_ecom/order_service/src/main/java/com/ecom_project/order_service/event/OrderPlacedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_microservices_ecom/order_service/src/main/java/com/ecom_project/order_service/serviceImpl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring_microservices_ecom/order_service/src/main/java/com/ecom_project/order_service/serviceImpl/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_microservices_ecom/order_service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring_microservices_ecom/order_service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring_microservices_ecom/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring_microservices_ecom/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2qUBH3ie3U4QwIYjYyJ0CsMC1xW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ApiGatewayApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.DiscoveryServerApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.SpringJwtAuthApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.TestService.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.TestServiceApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Maven.api_gateway [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.api_gateway [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.auth_service [package,-DforkCount=0...].executor&quot;: &quot;Debug&quot;,
+    &quot;Maven.jwt_auth_microservices [clean,install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.jwt_auth_microservices [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.jwt_auth_microservices [dependency:purge-local-repository].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;U:/Desktop/09_Projects/04_Java_Microservices/jwt_auth_microservices/auth_service&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.build.tools.auto.reload&quot;: &quot;ALL&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="U:\Desktop\09_Projects\04_Java_Microservices\jwt_auth_microservices\auth_service" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn dependency:purge-local-repository " />
+      <command value="mvn clean install" />
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="Application" />
+      </set>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b608577-8706-4f83-b8c3-f45fab883f05" name="Changes" comment="" />
+      <created>1734707183588</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1734707183588</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/auth_service/src/main/java/com/auth_api/spring_jwt_auth/jwt/JwtService.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
